@@ -1,0 +1,14 @@
+\begin{tikzpicture}[scale=0.5]
+
+\draw[fill,color=white](0,0) -- (0,10) -- (11.5,10) -- (11.5,0) -- cycle;
+\draw(0,0) -- (0,10) -- (11.5,10) -- (11.5,0) -- cycle;
+\draw[ultra thick] (0,0) -- (10,10); 
+\draw[ultra thick] (0.5,0) -- (10.5,10);
+\draw[ultra thick,->](0,5) -- node[above]{$M_1$}  (5,5);
+\draw[ultra thick,->](5.5,5) --(10.5,7.5)node[above]{$M_2$} ;
+\draw[dash pattern=on 10pt off 2pt,thick](5.5,5) -- (10.5,5);
+\draw[dash pattern=on 10pt off 2pt,thick](3,2.5) -- (7.1,2.5);
+\draw[<->,thick](4.5,4) arc(45:0:2.1)node[above right]{$\beta$};
+\draw[<->,thick](7.5,6) arc(45:0:1.4)node[above right]{$\theta$};
+
+\end{tikzpicture}

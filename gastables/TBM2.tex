@@ -1,0 +1,13 @@
+\documentclass[landscape]{article}
+\usepackage{tikz}
+\tikzset{>=latex}
+\usepackage{pdfpages}% http://ctan.org/pkg/pdfpages
+\usepackage{eso-pic}% http://ctan.org/pkg/eso-pic
+\pagestyle{empty}
+\begin{document}
+% Add pages before
+\AddToShipoutPictureFG*{%
+	\put(616.5,75.25){\input{shock}}
+}%
+\includepdf{TBM.pdf}
+\end{document}
