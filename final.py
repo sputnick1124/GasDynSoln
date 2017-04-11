@@ -60,6 +60,7 @@ ax2.plot(A1Ai, Me, 'r*-')
 ax2.set_ylabel('$M_e$', color='r')
 ax2.tick_params('y', colors='r')
 plt.show()
+plt.savefig('P_M_vs_AA.png')
 
 
 #On to the second part. Show how mach varies through the nozzle
@@ -79,3 +80,5 @@ xlabels = ['$A_i$','$A_1$','$A_2$','$A_e$']
 plt.xlabel('Station in nozzle')
 plt.ylabel('Mach number')
 plt.xticks(x,xlabels)
+plt.show()
+plt.savefig('M_vs_x.png')
